@@ -18,25 +18,33 @@ import SwiftUI
                 Form{
                     VStack{
                         TextField("Enter Name", text: $taskListVM.taskListTitle)
+                            .frame(height: 55)
+                            .background(Color(.white))
+                            .cornerRadius(10)
                         Button(action: {
                             taskListVM.createTask(context: viewContext)
                             addView.toggle()
                         }, label: {
                             if taskListVM.taskListItem == nil {
                                 Text("Add Item")
-                                    .frame(minWidth: 0,maxWidth: .infinity)
-                                    .background(.blue)
+                                    .foregroundColor(.white)
+                                    .frame(height: 55)
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.accentColor)
+                                    .cornerRadius(10)
                                     .padding()
                             }
                             else{
                                 Text("Edit Item")
-                                    .frame(minWidth: 0,maxWidth: .infinity)
                                     .foregroundColor(.white)
-                                    .background(.blue)
+                                    .frame(height: 55)
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.accentColor)
+                                    .cornerRadius(10)
                                     .padding()
                             }
                         })
-                            .tint(.yellow)
+                            
                             .buttonStyle(.bordered)
                             .buttonBorderShape(.roundedRectangle)
                     }
