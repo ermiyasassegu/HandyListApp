@@ -12,7 +12,7 @@ struct ItemsListView: View {
     
         @EnvironmentObject var taskListVM:TaskListViewModel
         // fetching object from core data
-        @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var fetchedTaskList:FetchedResults<TaskList>
+        @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) var fetchedTaskList:FetchedResults<TaskList>
         
         @State private var addView = false
         

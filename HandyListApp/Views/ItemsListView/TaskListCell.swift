@@ -16,14 +16,18 @@ struct TaskListCell: View {
     
     var body: some View {
         HStack{
-            VStack(alignment:.leading){
+            HStack{
                 if taskListItem.isDone{
                     Text(taskListItem.title ?? "").foregroundColor(.gray)
                 }else{
                     Text(taskListItem.title ?? "")
                 }
+                Spacer()
                 if (taskListItem.date != nil){
-                    Text("\(taskListItem.date!.formatted(.dateTime.month().day().hour().minute().second()))").foregroundColor(.gray)
+                    Text(calcTimeSince(date: taskListItem.date!))
+                                .foregroundColor(.gray)
+                                .italic()
+                    //Text("\(taskListItem.date!.formatted(.dateTime.month().day().hour().minute().second()))").foregroundColor(.gray)
                 }
                 
             }
