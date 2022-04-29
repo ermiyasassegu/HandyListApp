@@ -51,6 +51,9 @@
 		6A4160A5281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A3281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld */; };
 		6A4160A728171467009448F7 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A628171467009448F7 /* TaskListCell.swift */; };
 		6A4160A92817AB34009448F7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A82817AB34009448F7 /* SettingView.swift */; };
+		6A7A3277281C7E6B006DDA42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A3276281C7E6B006DDA42 /* MapView.swift */; };
+		6A7A3279281C7ECC006DDA42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A3278281C7ECC006DDA42 /* LocationManager.swift */; };
+		6A7A327C281C7FB7006DDA42 /* MapViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A327B281C7FB7006DDA42 /* MapViewScreen.swift */; };
 		6A7A44082818E5690023DE3A /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A44072818E5690023DE3A /* TimeFormatting.swift */; };
 		6A891E64280020B600E74A5D /* HandyListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891E63280020B600E74A5D /* HandyListAppApp.swift */; };
 		6A891E66280020B600E74A5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891E65280020B600E74A5D /* ContentView.swift */; };
@@ -125,6 +128,9 @@
 		6A4160A4281711C4009448F7 /* CD-CRUD-MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CD-CRUD-MVVM.xcdatamodel"; sourceTree = "<group>"; };
 		6A4160A628171467009448F7 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 		6A4160A82817AB34009448F7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6A7A3276281C7E6B006DDA42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6A7A3278281C7ECC006DDA42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6A7A327B281C7FB7006DDA42 /* MapViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewScreen.swift; sourceTree = "<group>"; };
 		6A7A44072818E5690023DE3A /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 		6A891E60280020B600E74A5D /* HandyListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A891E63280020B600E74A5D /* HandyListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyListAppApp.swift; sourceTree = "<group>"; };
@@ -225,14 +231,14 @@
 			path = RecipesView;
 			sourceTree = "<group>";
 		};
-		6A4160842816B8F1009448F7 /* Screens */ = {
+		6A4160842816B8F1009448F7 /* RecipeScreens */ = {
 			isa = PBXGroup;
 			children = (
 				6A4160852816B93C009448F7 /* RecipeCategoryListScreen.swift */,
 				6A4160872816B95A009448F7 /* RecipeListScreen.swift */,
 				6A4160892816B9CA009448F7 /* RecipeDetailScreen.swift */,
 			);
-			path = Screens;
+			path = RecipeScreens;
 			sourceTree = "<group>";
 		};
 		6A41608F2816BB5D009448F7 /* RecipesModel */ = {
@@ -267,6 +273,7 @@
 		6A4160922816C971009448F7 /* ItemsModel */ = {
 			isa = PBXGroup;
 			children = (
+				6A20E7BF280D989E00B076E7 /* ItemModel.swift */,
 			);
 			path = ItemsModel;
 			sourceTree = "<group>";
@@ -296,6 +303,48 @@
 				6A4160992816CEA3009448F7 /* Persistence.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		6A7A3272281C7DCE006DDA42 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A327A281C7F94006DDA42 /* Screen */,
+				6A7A3275281C7E25006DDA42 /* Models */,
+				6A7A3274281C7E19006DDA42 /* Managers */,
+				6A7A3273281C7E05006DDA42 /* Views */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		6A7A3273281C7E05006DDA42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A3276281C7E6B006DDA42 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A7A3274281C7E19006DDA42 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A3278281C7ECC006DDA42 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6A7A3275281C7E25006DDA42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A7A327A281C7F94006DDA42 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A327B281C7FB7006DDA42 /* MapViewScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		6A7A44062818E54A0023DE3A /* Helpers */ = {
@@ -331,11 +380,12 @@
 			isa = PBXGroup;
 			children = (
 				6A891E63280020B600E74A5D /* HandyListAppApp.swift */,
-				6A4160842816B8F1009448F7 /* Screens */,
+				6A4160842816B8F1009448F7 /* RecipeScreens */,
 				6A4160622812DB59009448F7 /* Utils */,
 				6A7A44062818E54A0023DE3A /* Helpers */,
 				6A3B74DF280F55C7000E42B9 /* Services */,
 				6AC270092811FA670092641D /* Authentication */,
+				6A7A3272281C7DCE006DDA42 /* Maps */,
 				6A891E8D280027A300E74A5D /* Views */,
 				6A891E942802960000E74A5D /* ViewModels */,
 				6A891E952802961E00E74A5D /* Models */,
@@ -439,7 +489,6 @@
 				6A891E67280020B900E74A5D /* Assets.xcassets */,
 				6A41609B2816F3D9009448F7 /* recipes.jpeg */,
 				6AC270042811ED970092641D /* GoogleService-Info.plist */,
-				6A20E7BF280D989E00B076E7 /* ItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -594,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4160862816B93C009448F7 /* RecipeCategoryListScreen.swift in Sources */,
+				6A7A3277281C7E6B006DDA42 /* MapView.swift in Sources */,
 				6A4160A728171467009448F7 /* TaskListCell.swift in Sources */,
 				6A05FA0328052F0100BB7957 /* RegistrationView.swift in Sources */,
 				6A4160A5281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld in Sources */,
@@ -606,6 +656,7 @@
 				6A05FA0C28061F5B00BB7957 /* ListView.swift in Sources */,
 				6A20E7BC280D0B1700B076E7 /* SideMenuViewModel.swift in Sources */,
 				6A05FA06280533D100BB7957 /* AuthHeaderView.swift in Sources */,
+				6A7A327C281C7FB7006DDA42 /* MapViewScreen.swift in Sources */,
 				6A891EA42802975B00E74A5D /* HomeView.swift in Sources */,
 				6A41608C2816BA15009448F7 /* RecipeListViewModel.swift in Sources */,
 				6A891EA62802977200E74A5D /* CategoriesView.swift in Sources */,
@@ -623,6 +674,7 @@
 				6A4160A92817AB34009448F7 /* SettingView.swift in Sources */,
 				6A891EAE2802998400E74A5D /* TabBar.swift in Sources */,
 				6A05FA01280526D500BB7957 /* RoundedShape.swift in Sources */,
+				6A7A3279281C7ECC006DDA42 /* LocationManager.swift in Sources */,
 				6A891EAC280297AE00E74A5D /* NavigateView.swift in Sources */,
 				6A41605D2812DA3A009448F7 /* WebServices.swift in Sources */,
 				6A05FA0E280626AA00BB7957 /* ListRowView.swift in Sources */,
