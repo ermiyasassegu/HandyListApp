@@ -11,7 +11,7 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @EnvironmentObject var viewModel: AuthViewModel
-    //@StateObject var loginData: LoginPageModel = LoginPageModel()
+    
     
     var body: some View {
        //parent container
@@ -47,12 +47,8 @@ struct LoginView: View {
                     .padding(.trailing, 24)
             }
         }
+            
             Button {
-                
-//                loginData.Login { success in
-//                    authentication.updateValidation(success: success)
-//
-//                }
                 viewModel.login(withEmail: email, password: password)
                 
             } label: {
