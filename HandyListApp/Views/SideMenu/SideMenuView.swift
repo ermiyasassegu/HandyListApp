@@ -34,7 +34,13 @@ struct SideMenuView: View {
                     } label: {
                         SideMenuOptionRowView(viewModel: viewModel)
                     }
-                } else if viewModel == .Settings {
+                } else if viewModel == .nearByShop {
+                    NavigationLink{
+                        MapScreenView()
+                    }label: {
+                        SideMenuOptionRowView(viewModel: viewModel)
+                    }
+                    }else if viewModel == .Settings {
                     NavigationLink{
                         SettingView()
                     }label: {
