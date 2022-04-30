@@ -49,10 +49,7 @@ struct LoginView: View {
         }
             Button {
                 
-//                loginData.Login { success in
-//                    authentication.updateValidation(success: success)
-//
-//                }
+
                 viewModel.login(withEmail: email, password: password)
                 
             } label: {

@@ -101,7 +101,7 @@ var userInfoDetails: some View {
             
             HStack {
                 Image(systemName: "link")
-                Text("www.imstagram.fi/Heath")
+                Text("www.instagram.fi/Heath")
             }
         }
        

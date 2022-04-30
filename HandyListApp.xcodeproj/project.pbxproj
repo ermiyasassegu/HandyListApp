@@ -362,13 +362,6 @@
 			path = MapScreen;
 			sourceTree = "<group>";
 		};
-		6A7A3285281C8A7F006DDA42 /* Speech */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Speech;
-			sourceTree = "<group>";
-		};
 		6A7A44062818E54A0023DE3A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,7 +402,6 @@
 				6A7A44062818E54A0023DE3A /* Helpers */,
 				6A3B74DF280F55C7000E42B9 /* Services */,
 				6AC270092811FA670092641D /* Authentication */,
-				6A7A3285281C8A7F006DDA42 /* Speech */,
 				6A7A3272281C7DCE006DDA42 /* Maps */,
 				6A891E8D280027A300E74A5D /* Views */,
 				6A891E942802960000E74A5D /* ViewModels */,

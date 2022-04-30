@@ -19,11 +19,7 @@ struct RegistrationView: View {
         VStack{
             //header view
            AuthHeaderView(title1: "Get started.", title2: "Create your account")
-//            VStack{
-//                if profileImage != nil{
-//                    profileImage!.resizable()
-//                }
-//            }
+
             VStack(spacing: 40){
                 CustomInputField(imageName: "envelope",
                                  placeholderText: "Email",
