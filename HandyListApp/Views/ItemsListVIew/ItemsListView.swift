@@ -25,12 +25,12 @@ struct ItemsListView: View {
             NavigationView{
                 ZStack(alignment: .bottomTrailing) {
                 List{
-                    Section("Favorite"){
+                    Section(LocalizedStringKey("Favorite")){
                         ForEach(fetchedTaskList.filter{$0.isFavorite == true}){item in
                             TaskListCell(taskListItem: item)
                         }
                     }
-                    Section("Items"){
+                    Section(LocalizedStringKey("Items")){
                         ForEach(fetchedTaskList.filter{$0.isFavorite == false}){item in
                             TaskListCell(taskListItem: item)
                         }
@@ -68,7 +68,7 @@ struct ItemsListView: View {
                         Label("Add Item",systemImage: "plus")
                     })
                 }
-                .navigationTitle("Grocery List")
+                .navigationTitle(LocalizedStringKey("GroceryList"))
         
             }
         }

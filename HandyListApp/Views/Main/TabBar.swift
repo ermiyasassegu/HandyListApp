@@ -12,17 +12,17 @@ struct TabBar: View {
         TabView{
             ItemsListView()
                 .tabItem{
-                    Label("Home", systemImage: "house")
+                    Label((LocalizedStringKey("Home")), systemImage: "house")
                 }
             
             ProfileView()
                 .tabItem{
-                    Label("Profile", systemImage: "person.crop.circle")
+                    Label((LocalizedStringKey("Profile")), systemImage: "person.crop.circle")
                 }
             
             RecipeCategoryListScreen ()
                 .tabItem{
-                    Label("Recipe", systemImage: "list.bullet")
+                    Label((LocalizedStringKey("Recipe")), systemImage: "list.bullet")
                 }
         }
     }

@@ -6,6 +6,7 @@
   
 */
 
+// Rekisteröidy ja Kirjaudu sisään
 "GetStarted" = "Aloita";
 "CreateAccount" = "Luo tilisi";
 "Hello" = "Hei,";
@@ -16,3 +17,22 @@
 "SignIn" = "Kirjaudu sisään";
 "noAccount" = "Eikö sinulla ole tiliä?";
 "SignUp" = "Rekisteröidy";
+"UserName" = "Käyttäjänimi";
+"FullName" = "Koko nimi";
+"hasAccount" = "Onko sinulla jo tili?";
+
+// Home page
+"Home" = "Koti";
+"GroceryList" = "Ostoslista";
+"Favorite" = "Suosikki";
+"Items" = "Tuotteet";
+
+// Tab Bar
+"Profile" = "Profiili";
+"Recipe" = "Resepti";
+"Recipes" = "Reseptit";
+
+// menu Side
+"NearByShop" = "Lähellä kauppaa";
+"Setting" = "Asetus";
+"Logout" = "Kirjaudu ulos";

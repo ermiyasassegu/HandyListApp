@@ -6,6 +6,7 @@
   
 */
 
+// Registration and Login pages
 "GetStarted" = "Get started";
 "CreateAccount" = "Create your account";
 "Hello" = "Hello,";
@@ -16,3 +17,22 @@
 "SignIn" = "Sign In";
 "noAccount" = "Don't have an account?";
 "SignUp" = "Sign Up";
+"UserName" = "Username";
+"FullName" = "Fullname";
+"hasAccount" = "Already have an account?";
+
+// Home page
+ "Home" = "Home";
+"GroceryList" = "Grocery List";
+"Favorite" = "Favorite";
+"Items" = "Items";
+
+// Tab bar
+"Profile" = "Profile";
+"Recipe" = "Recipe";
+"Recipes" = "Recipes";
+
+// menu Side
+"NearByShop" = "NearByShop";
+"Setting" = "Setting";
+"Logout" = "Logout";

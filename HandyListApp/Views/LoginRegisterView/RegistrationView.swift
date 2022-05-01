@@ -18,7 +18,7 @@ struct RegistrationView: View {
     var body: some View {
         VStack{
             //header view
-           AuthHeaderView(title1: "Get started.", title2: "Create your account")
+           AuthHeaderView(title1: "GetStarted", title2: "CreateAccount")
 
             VStack(spacing: 40){
                 CustomInputField(imageName: "envelope",
@@ -26,11 +26,11 @@ struct RegistrationView: View {
                                  text: $email)
                 
                 CustomInputField(imageName: "person",
-                                 placeholderText: "Username",
+                                 placeholderText: "UserName",
                                  text: $username)
                 
                 CustomInputField(imageName: "person",
-                                 placeholderText: "Fullname",
+                                 placeholderText: "FullName",
                                  text: $fullname)
                 
                 CustomInputField(imageName: "lock",
@@ -46,7 +46,7 @@ struct RegistrationView: View {
                                    fullname: fullname,
                                    username: username)
             } label: {
-                Text("Sign Up")
+                Text(LocalizedStringKey("SignUp"))
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(width: 340, height: 50)
@@ -63,10 +63,10 @@ struct RegistrationView: View {
                 
             } label: {
                 HStack{
-                Text("Already have an account?")
+                    Text(LocalizedStringKey("hasAccount"))
                     .font(.footnote)
                     
-                Text("Sign In")
+                Text(LocalizedStringKey("SignIn"))
                     .font(.footnote)
                     .fontWeight(.semibold)
                 
