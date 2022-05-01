@@ -19,7 +19,7 @@ struct LoginView: View {
             
             // header view
             
-            AuthHeaderView(title1: "Hello,", title2: "Welcome to HandyList")
+            AuthHeaderView(title1: "Hello", title2: "Welcome")
                 
             VStack(spacing:40) {
                 CustomInputField(imageName: "envelope",
@@ -39,7 +39,7 @@ struct LoginView: View {
                 NavigationLink{
                     Text("Reset password view ..")
             } label: {
-                Text("Forget Password")
+                Text(LocalizedStringKey("ForgetPassword"))
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundColor(Color(.systemBlue))
@@ -53,7 +53,7 @@ struct LoginView: View {
                 viewModel.login(withEmail: email, password: password)
                 
             } label: {
-                Text("Sign In")
+                Text(LocalizedStringKey("SignIn"))
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(width: 340, height: 50)
@@ -70,10 +70,10 @@ struct LoginView: View {
                     .navigationBarHidden(true)
             } label: {
                 HStack{
-                Text("Don't have an account?")
+                Text(LocalizedStringKey("noAccount"))
                     .font(.footnote)
                     
-                Text("Sign Up")
+                Text(LocalizedStringKey("SignUp"))
                     .font(.footnote)
                     .fontWeight(.semibold)
                 

@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  HandyListApp
+
+  Created by iosdev on 1.5.2022.
+  
+*/
+
+"GetStarted" = "Aloita";
+"CreateAccount" = "Luo tilisi";
+"Hello" = "Hei,";
+"Welcome" = "Tervetuloa HandyListiin";
+"Email" = "sähköposti";
+"Password" = "Salasana";
+"ForgetPassword" = "Unohda salasana";
+"SignIn" = "Kirjaudu sisään";
+"noAccount" = "Eikö sinulla ole tiliä?";
+"SignUp" = "Rekisteröidy";

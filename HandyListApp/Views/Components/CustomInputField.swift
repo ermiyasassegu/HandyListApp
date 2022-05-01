@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomInputField: View {
     let imageName: String
-    let placeholderText: String
+    let placeholderText: LocalizedStringKey
     var isSecuredField: Bool? = false
     @Binding var text: String
     

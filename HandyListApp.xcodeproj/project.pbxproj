@@ -71,6 +71,7 @@
 		6ADB3FC7281DCE18002E75D1 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FC6281DCE18002E75D1 /* SpeechManager.swift */; };
 		6ADB3FC9281DD228002E75D1 /* MicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FC8281DD228002E75D1 /* MicManager.swift */; };
 		6ADB3FCB281DD581002E75D1 /* VisualBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FCA281DD581002E75D1 /* VisualBarView.swift */; };
+		6ADB3FCF281EADA4002E75D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ADB3FD1281EADA4002E75D1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,8 @@
 		6ADB3FC6281DCE18002E75D1 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		6ADB3FC8281DD228002E75D1 /* MicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicManager.swift; sourceTree = "<group>"; };
 		6ADB3FCA281DD581002E75D1 /* VisualBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBarView.swift; sourceTree = "<group>"; };
+		6ADB3FD0281EADA4002E75D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6ADB3FD2281EADCE002E75D1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,7 @@
 		6A891E62280020B600E74A5D /* HandyListApp */ = {
 			isa = PBXGroup;
 			children = (
+				6ADB3FD3281EB9F5002E75D1 /* Localization */,
 				6ADB3FC5281DCDCD002E75D1 /* SpeechToText */,
 				6A7A328B281C9B02006DDA42 /* Info.plist */,
 				6A7A328A281C9AE7006DDA42 /* HandyListApp.entitlements */,
@@ -523,6 +527,14 @@
 			path = SpeechVisualization;
 			sourceTree = "<group>";
 		};
+		6ADB3FD3281EB9F5002E75D1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				6ADB3FD1281EADA4002E75D1 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,6 +627,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fi,
 			);
 			mainGroup = 6A891E57280020B600E74A5D;
 			packageReferences = (
@@ -636,6 +649,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADB3FCF281EADA4002E75D1 /* Localizable.strings in Resources */,
 				6A891E6B280020B900E74A5D /* Preview Assets.xcassets in Resources */,
 				6A891E68280020B900E74A5D /* Assets.xcassets in Resources */,
 				6AC270052811ED970092641D /* GoogleService-Info.plist in Resources */,
@@ -750,6 +764,18 @@
 			targetProxy = 6A891E7B280020BA00E74A5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6ADB3FD1281EADA4002E75D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ADB3FD0281EADA4002E75D1 /* en */,
+				6ADB3FD2281EADCE002E75D1 /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6A891E82280020BA00E74A5D /* Debug */ = {

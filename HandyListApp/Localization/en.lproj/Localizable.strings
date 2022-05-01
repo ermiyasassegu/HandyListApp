@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  HandyListApp
+
+  Created by iosdev on 1.5.2022.
+  
+*/
+
+"GetStarted" = "Get started";
+"CreateAccount" = "Create your account";
+"Hello" = "Hello,";
+"Welcome" = "Welcome to HandyList";
+"email" = "email";
+"Password" = "Password";
+"ForgetPassword" = "Forget Password";
+"SignIn" = "Sign In";
+"noAccount" = "Don't have an account?";
+"SignUp" = "Sign Up";
