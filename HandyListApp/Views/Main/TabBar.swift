@@ -10,18 +10,14 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView{
-            HomeView()
+            ItemsListView()
                 .tabItem{
                     Label("Home", systemImage: "house")
                 }
-            CategoriesView()
-                .tabItem{
-                    Label("categories", systemImage: "square.fill.text.grid.1x2")
-                }
             
-            ItemsListView()
+            ProfileView()
                 .tabItem{
-                    Label("Add", systemImage: "plus")
+                    Label("Profile", systemImage: "person.crop.circle")
                 }
             
             RecipeCategoryListScreen ()

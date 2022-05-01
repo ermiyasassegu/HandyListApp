@@ -11,9 +11,6 @@
 		6A05FA0328052F0100BB7957 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA0228052F0000BB7957 /* RegistrationView.swift */; };
 		6A05FA06280533D100BB7957 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA05280533D100BB7957 /* AuthHeaderView.swift */; };
 		6A05FA08280535DD00BB7957 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA07280535DD00BB7957 /* CustomInputField.swift */; };
-		6A05FA0A2806156000BB7957 /* AddItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA092806156000BB7957 /* AddItemsView.swift */; };
-		6A05FA0C28061F5B00BB7957 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA0B28061F5B00BB7957 /* ListView.swift */; };
-		6A05FA0E280626AA00BB7957 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA0D280626AA00BB7957 /* ListRowView.swift */; };
 		6A05FA102806FC7400BB7957 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA0F2806FC7400BB7957 /* SideMenuView.swift */; };
 		6A05FA12280845B400BB7957 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05FA11280845B400BB7957 /* SideMenuHeaderView.swift */; };
 		6A20E7BA280D0AD000B076E7 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7B9280D0AD000B076E7 /* SideMenuOptionRowView.swift */; };
@@ -23,7 +20,6 @@
 		6A20E7C4280DA3D000B076E7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */; };
 		6A20E7C7280E4E4E00B076E7 /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */; };
 		6A3362262805244A00CA5149 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3362252805244A00CA5149 /* LoginView.swift */; };
-		6A3B74E3280F5A1E000E42B9 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B74E2280F5A1E000E42B9 /* Authentication.swift */; };
 		6A41605D2812DA3A009448F7 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41605C2812DA3A009448F7 /* WebServices.swift */; };
 		6A41605F2812DAA7009448F7 /* RecipeCatagoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41605E2812DAA7009448F7 /* RecipeCatagoryResponse.swift */; };
 		6A4160612812DAFB009448F7 /* RecipeCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160602812DAFB009448F7 /* RecipeCategoryViewModel.swift */; };
@@ -72,6 +68,9 @@
 		6A891EAE2802998400E74A5D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891EAD2802998400E74A5D /* TabBar.swift */; };
 		6AC270052811ED970092641D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC270042811ED970092641D /* GoogleService-Info.plist */; };
 		6AC2700B2811FAC70092641D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC2700A2811FAC60092641D /* AuthViewModel.swift */; };
+		6ADB3FC7281DCE18002E75D1 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FC6281DCE18002E75D1 /* SpeechManager.swift */; };
+		6ADB3FC9281DD228002E75D1 /* MicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FC8281DD228002E75D1 /* MicManager.swift */; };
+		6ADB3FCB281DD581002E75D1 /* VisualBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB3FCA281DD581002E75D1 /* VisualBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +95,6 @@
 		6A05FA0228052F0000BB7957 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		6A05FA05280533D100BB7957 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		6A05FA07280535DD00BB7957 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
-		6A05FA092806156000BB7957 /* AddItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsView.swift; sourceTree = "<group>"; };
-		6A05FA0B28061F5B00BB7957 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		6A05FA0D280626AA00BB7957 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		6A05FA0F2806FC7400BB7957 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		6A05FA11280845B400BB7957 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		6A20E7B9280D0AD000B076E7 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
@@ -108,7 +104,6 @@
 		6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
 		6A3362252805244A00CA5149 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		6A3B74E2280F5A1E000E42B9 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		6A41605C2812DA3A009448F7 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		6A41605E2812DAA7009448F7 /* RecipeCatagoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCatagoryResponse.swift; sourceTree = "<group>"; };
 		6A4160602812DAFB009448F7 /* RecipeCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryViewModel.swift; sourceTree = "<group>"; };
@@ -158,6 +153,9 @@
 		6A891EAD2802998400E74A5D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6AC270042811ED970092641D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6AC2700A2811FAC60092641D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6ADB3FC6281DCE18002E75D1 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		6ADB3FC8281DD228002E75D1 /* MicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicManager.swift; sourceTree = "<group>"; };
+		6ADB3FCA281DD581002E75D1 /* VisualBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,14 +270,14 @@
 			path = LoginRegisterView;
 			sourceTree = "<group>";
 		};
-		6A4160912816C95A009448F7 /* ItemsListView */ = {
+		6A4160912816C95A009448F7 /* ItemsListVIew */ = {
 			isa = PBXGroup;
 			children = (
 				6A41609D2816FD72009448F7 /* ItemsListView.swift */,
 				6A4160A128170170009448F7 /* AddListView.swift */,
 				6A4160A628171467009448F7 /* TaskListCell.swift */,
 			);
-			path = ItemsListView;
+			path = ItemsListVIew;
 			sourceTree = "<group>";
 		};
 		6A4160922816C971009448F7 /* ItemsModel */ = {
@@ -394,6 +392,7 @@
 		6A891E62280020B600E74A5D /* HandyListApp */ = {
 			isa = PBXGroup;
 			children = (
+				6ADB3FC5281DCDCD002E75D1 /* SpeechToText */,
 				6A7A328B281C9B02006DDA42 /* Info.plist */,
 				6A7A328A281C9AE7006DDA42 /* HandyListApp.entitlements */,
 				6A891E63280020B600E74A5D /* HandyListAppApp.swift */,
@@ -440,7 +439,7 @@
 		6A891E8D280027A300E74A5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6A4160912816C95A009448F7 /* ItemsListView */,
+				6A4160912816C95A009448F7 /* ItemsListVIew */,
 				6A4160902816BBAF009448F7 /* LoginRegisterView */,
 				6A4160772816AF24009448F7 /* RecipesView */,
 				6A4160762814B197009448F7 /* SideMenu */,
@@ -468,9 +467,6 @@
 				6A891EA32802975B00E74A5D /* HomeView.swift */,
 				6A891EA52802977200E74A5D /* CategoriesView.swift */,
 				6A891EAB280297AE00E74A5D /* NavigateView.swift */,
-				6A05FA092806156000BB7957 /* AddItemsView.swift */,
-				6A05FA0B28061F5B00BB7957 /* ListView.swift */,
-				6A05FA0D280626AA00BB7957 /* ListRowView.swift */,
 				6A20E7BD280D1BA600B076E7 /* ProfileView.swift */,
 				6A4160A82817AB34009448F7 /* SettingView.swift */,
 			);
@@ -480,12 +476,11 @@
 		6A891E942802960000E74A5D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				6A4160942816C9BD009448F7 /* ItemsListViewModel */,
-				6A4160932816C999009448F7 /* RecipesViewModel */,
 				6A20E7BB280D0B1700B076E7 /* SideMenuViewModel.swift */,
 				6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */,
 				6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */,
-				6A3B74E2280F5A1E000E42B9 /* Authentication.swift */,
+				6A4160942816C9BD009448F7 /* ItemsListViewModel */,
+				6A4160932816C999009448F7 /* RecipesViewModel */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -508,6 +503,24 @@
 				6AC2700A2811FAC60092641D /* AuthViewModel.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6ADB3FC5281DCDCD002E75D1 /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				6ADB3FC6281DCE18002E75D1 /* SpeechManager.swift */,
+				6ADB3FCC281DD610002E75D1 /* SpeechVisualization */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		6ADB3FCC281DD610002E75D1 /* SpeechVisualization */ = {
+			isa = PBXGroup;
+			children = (
+				6ADB3FC8281DD228002E75D1 /* MicManager.swift */,
+				6ADB3FCA281DD581002E75D1 /* VisualBarView.swift */,
+			);
+			path = SpeechVisualization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,8 +676,7 @@
 				6A41607B2816AF7E009448F7 /* RecipeCategoryListView.swift in Sources */,
 				6A7A3284281C8701006DDA42 /* PlaceListView.swift in Sources */,
 				6A4160812816B6BA009448F7 /* Recipe.swift in Sources */,
-				6A05FA0A2806156000BB7957 /* AddItemsView.swift in Sources */,
-				6A05FA0C28061F5B00BB7957 /* ListView.swift in Sources */,
+				6ADB3FC7281DCE18002E75D1 /* SpeechManager.swift in Sources */,
 				6A20E7BC280D0B1700B076E7 /* SideMenuViewModel.swift in Sources */,
 				6A05FA06280533D100BB7957 /* AuthHeaderView.swift in Sources */,
 				6A7A327E281C81CA006DDA42 /* Landmark.swift in Sources */,
@@ -689,7 +701,6 @@
 				6A7A3279281C7ECC006DDA42 /* LocationManager.swift in Sources */,
 				6A891EAC280297AE00E74A5D /* NavigateView.swift in Sources */,
 				6A41605D2812DA3A009448F7 /* WebServices.swift in Sources */,
-				6A05FA0E280626AA00BB7957 /* ListRowView.swift in Sources */,
 				6A891E66280020B600E74A5D /* ContentView.swift in Sources */,
 				6A4160A228170170009448F7 /* AddListView.swift in Sources */,
 				6A05FA12280845B400BB7957 /* SideMenuHeaderView.swift in Sources */,
@@ -700,10 +711,11 @@
 				6A41605F2812DAA7009448F7 /* RecipeCatagoryResponse.swift in Sources */,
 				6A41609E2816FD72009448F7 /* ItemsListView.swift in Sources */,
 				6A05FA08280535DD00BB7957 /* CustomInputField.swift in Sources */,
+				6ADB3FCB281DD581002E75D1 /* VisualBarView.swift in Sources */,
+				6ADB3FC9281DD228002E75D1 /* MicManager.swift in Sources */,
 				6A4160882816B95A009448F7 /* RecipeListScreen.swift in Sources */,
 				6A4160832816B6ED009448F7 /* RecipeDetailResponse.swift in Sources */,
 				6A7A44082818E5690023DE3A /* TimeFormatting.swift in Sources */,
-				6A3B74E3280F5A1E000E42B9 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,6 +881,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandyListApp/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "HandyList app require acess location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Request access to MIC for speech to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Request access to MIC for speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -900,6 +914,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandyListApp/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "HandyList app require acess location";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Request access to MIC for speech to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Request access to MIC for speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
