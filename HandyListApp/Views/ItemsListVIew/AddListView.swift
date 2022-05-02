@@ -21,6 +21,7 @@ import SwiftUI
                             .frame(height: 55)
                             .background(Color(.white))
                             .cornerRadius(10)
+                            .accessibility(identifier: "addItemTextField")
                         Button(action: {
                             taskListVM.createTask(context: viewContext)
                             addView.toggle()
@@ -49,7 +50,7 @@ import SwiftUI
                             .buttonBorderShape(.roundedRectangle)
                     }
                 }
-                .navigationTitle(taskListVM.taskListItem == nil ? "Add an Item 🥗" : "Edit an Item 🍝")
+                .navigationTitle(taskListVM.taskListItem == nil ? "Add an Item" : "Edit an Item")
             }
         }
     }

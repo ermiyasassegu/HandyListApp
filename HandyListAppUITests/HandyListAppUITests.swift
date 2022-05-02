@@ -24,7 +24,7 @@ class when_add_new_item_screen_is_presented: setup_launching_add_new_item_screen
     
     func test_should_make_sure_screen_is_displayed() {
        
-        let addTaskNavBarTitle = app.staticTexts["Add an Item 🥗"]
+        let addTaskNavBarTitle = app.staticTexts["Add an Item"]
         XCTAssert(addTaskNavBarTitle.waitForExistence(timeout: 0.5))
         
     }

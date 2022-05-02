@@ -66,6 +66,7 @@ struct ItemsListView: View {
                         addView.toggle()
                     }, label: {
                         Label("Add Item",systemImage: "plus")
+                            .accessibility(identifier: "showAddItemButton")
                     })
                 }
                 .navigationTitle(LocalizedStringKey("GroceryList"))
