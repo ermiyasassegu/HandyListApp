@@ -17,7 +17,6 @@
 		6A20E7BC280D0B1700B076E7 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7BB280D0B1700B076E7 /* SideMenuViewModel.swift */; };
 		6A20E7BE280D1BA600B076E7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7BD280D1BA600B076E7 /* ProfileView.swift */; };
 		6A20E7C0280D989E00B076E7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7BF280D989E00B076E7 /* ItemModel.swift */; };
-		6A20E7C4280DA3D000B076E7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */; };
 		6A20E7C7280E4E4E00B076E7 /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */; };
 		6A3362262805244A00CA5149 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3362252805244A00CA5149 /* LoginView.swift */; };
 		6A41605D2812DA3A009448F7 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41605C2812DA3A009448F7 /* WebServices.swift */; };
@@ -42,11 +41,12 @@
 		6A41609A2816CEA3009448F7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160992816CEA3009448F7 /* Persistence.swift */; };
 		6A41609C2816F3D9009448F7 /* recipes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A41609B2816F3D9009448F7 /* recipes.jpeg */; };
 		6A41609E2816FD72009448F7 /* ItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41609D2816FD72009448F7 /* ItemsListView.swift */; };
-		6A4160A02816FE93009448F7 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41609F2816FE93009448F7 /* TaskListViewModel.swift */; };
+		6A4160A02816FE93009448F7 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41609F2816FE93009448F7 /* ItemListViewModel.swift */; };
 		6A4160A228170170009448F7 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A128170170009448F7 /* AddListView.swift */; };
 		6A4160A5281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A3281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld */; };
-		6A4160A728171467009448F7 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A628171467009448F7 /* TaskListCell.swift */; };
+		6A4160A728171467009448F7 /* ItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A628171467009448F7 /* ItemListCell.swift */; };
 		6A4160A92817AB34009448F7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4160A82817AB34009448F7 /* SettingView.swift */; };
+		6A70CE1D282051E500BBEFC4 /* PersistanceControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A70CE1C282051E500BBEFC4 /* PersistanceControllerTest.swift */; };
 		6A7A3277281C7E6B006DDA42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A3276281C7E6B006DDA42 /* MapView.swift */; };
 		6A7A3279281C7ECC006DDA42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A3278281C7ECC006DDA42 /* LocationManager.swift */; };
 		6A7A327E281C81CA006DDA42 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A327D281C81CA006DDA42 /* Landmark.swift */; };
@@ -62,9 +62,6 @@
 		6A891E75280020BA00E74A5D /* HandyListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891E74280020BA00E74A5D /* HandyListAppTests.swift */; };
 		6A891E7F280020BA00E74A5D /* HandyListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891E7E280020BA00E74A5D /* HandyListAppUITests.swift */; };
 		6A891E81280020BA00E74A5D /* HandyListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891E80280020BA00E74A5D /* HandyListAppUITestsLaunchTests.swift */; };
-		6A891EA42802975B00E74A5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891EA32802975B00E74A5D /* HomeView.swift */; };
-		6A891EA62802977200E74A5D /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891EA52802977200E74A5D /* CategoriesView.swift */; };
-		6A891EAC280297AE00E74A5D /* NavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891EAB280297AE00E74A5D /* NavigateView.swift */; };
 		6A891EAE2802998400E74A5D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A891EAD2802998400E74A5D /* TabBar.swift */; };
 		6AC270052811ED970092641D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC270042811ED970092641D /* GoogleService-Info.plist */; };
 		6AC2700B2811FAC70092641D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC2700A2811FAC60092641D /* AuthViewModel.swift */; };
@@ -102,7 +99,6 @@
 		6A20E7BB280D0B1700B076E7 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		6A20E7BD280D1BA600B076E7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		6A20E7BF280D989E00B076E7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
 		6A3362252805244A00CA5149 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6A41605C2812DA3A009448F7 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
@@ -123,11 +119,12 @@
 		6A4160992816CEA3009448F7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6A41609B2816F3D9009448F7 /* recipes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipes.jpeg; sourceTree = "<group>"; };
 		6A41609D2816FD72009448F7 /* ItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListView.swift; sourceTree = "<group>"; };
-		6A41609F2816FE93009448F7 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		6A41609F2816FE93009448F7 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		6A4160A128170170009448F7 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
 		6A4160A4281711C4009448F7 /* CD-CRUD-MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CD-CRUD-MVVM.xcdatamodel"; sourceTree = "<group>"; };
-		6A4160A628171467009448F7 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		6A4160A628171467009448F7 /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
 		6A4160A82817AB34009448F7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6A70CE1C282051E500BBEFC4 /* PersistanceControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceControllerTest.swift; sourceTree = "<group>"; };
 		6A7A3276281C7E6B006DDA42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6A7A3278281C7ECC006DDA42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		6A7A327D281C81CA006DDA42 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
@@ -148,9 +145,6 @@
 		6A891E7A280020BA00E74A5D /* HandyListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandyListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A891E7E280020BA00E74A5D /* HandyListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyListAppUITests.swift; sourceTree = "<group>"; };
 		6A891E80280020BA00E74A5D /* HandyListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6A891EA32802975B00E74A5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		6A891EA52802977200E74A5D /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
-		6A891EAB280297AE00E74A5D /* NavigateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateView.swift; sourceTree = "<group>"; };
 		6A891EAD2802998400E74A5D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6AC270042811ED970092641D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6AC2700A2811FAC60092641D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -278,7 +272,7 @@
 			children = (
 				6A41609D2816FD72009448F7 /* ItemsListView.swift */,
 				6A4160A128170170009448F7 /* AddListView.swift */,
-				6A4160A628171467009448F7 /* TaskListCell.swift */,
+				6A4160A628171467009448F7 /* ItemListCell.swift */,
 			);
 			path = ItemsListVIew;
 			sourceTree = "<group>";
@@ -304,7 +298,7 @@
 		6A4160942816C9BD009448F7 /* ItemsListViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6A41609F2816FE93009448F7 /* TaskListViewModel.swift */,
+				6A41609F2816FE93009448F7 /* ItemListViewModel.swift */,
 			);
 			path = ItemsListViewModel;
 			sourceTree = "<group>";
@@ -321,7 +315,6 @@
 		6A7A3272281C7DCE006DDA42 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				6A7A327A281C7F94006DDA42 /* MapScreen */,
 				6A7A3275281C7E25006DDA42 /* Models */,
 				6A7A3274281C7E19006DDA42 /* Managers */,
 				6A7A3273281C7E05006DDA42 /* Views */,
@@ -354,13 +347,6 @@
 				6A7A327F281C8208006DDA42 /* LandmarkAnnotation.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		6A7A327A281C7F94006DDA42 /* MapScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MapScreen;
 			sourceTree = "<group>";
 		};
 		6A7A44062818E54A0023DE3A /* Helpers */ = {
@@ -427,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				6A891E74280020BA00E74A5D /* HandyListAppTests.swift */,
+				6A70CE1C282051E500BBEFC4 /* PersistanceControllerTest.swift */,
 			);
 			path = HandyListAppTests;
 			sourceTree = "<group>";
@@ -468,9 +455,6 @@
 			children = (
 				6A891E65280020B600E74A5D /* ContentView.swift */,
 				6A891EAD2802998400E74A5D /* TabBar.swift */,
-				6A891EA32802975B00E74A5D /* HomeView.swift */,
-				6A891EA52802977200E74A5D /* CategoriesView.swift */,
-				6A891EAB280297AE00E74A5D /* NavigateView.swift */,
 				6A20E7BD280D1BA600B076E7 /* ProfileView.swift */,
 				6A4160A82817AB34009448F7 /* SettingView.swift */,
 			);
@@ -481,7 +465,6 @@
 			isa = PBXGroup;
 			children = (
 				6A20E7BB280D0B1700B076E7 /* SideMenuViewModel.swift */,
-				6A20E7C3280DA3D000B076E7 /* ListViewModel.swift */,
 				6A20E7C6280E4E4E00B076E7 /* LoginPageModel.swift */,
 				6A4160942816C9BD009448F7 /* ItemsListViewModel */,
 				6A4160932816C999009448F7 /* RecipesViewModel */,
@@ -680,13 +663,12 @@
 			files = (
 				6A4160862816B93C009448F7 /* RecipeCategoryListScreen.swift in Sources */,
 				6A7A3277281C7E6B006DDA42 /* MapView.swift in Sources */,
-				6A4160A728171467009448F7 /* TaskListCell.swift in Sources */,
+				6A4160A728171467009448F7 /* ItemListCell.swift in Sources */,
 				6A05FA0328052F0100BB7957 /* RegistrationView.swift in Sources */,
 				6A4160A5281711C4009448F7 /* CD_CRUD_MVVM.xcdatamodeld in Sources */,
 				6A05FA102806FC7400BB7957 /* SideMenuView.swift in Sources */,
 				6A41607D2816AF9F009448F7 /* RecipeCellView.swift in Sources */,
 				6A7A3282281C85C4006DDA42 /* MapScreenView.swift in Sources */,
-				6A20E7C4280DA3D000B076E7 /* ListViewModel.swift in Sources */,
 				6A41607B2816AF7E009448F7 /* RecipeCategoryListView.swift in Sources */,
 				6A7A3284281C8701006DDA42 /* PlaceListView.swift in Sources */,
 				6A4160812816B6BA009448F7 /* Recipe.swift in Sources */,
@@ -694,9 +676,7 @@
 				6A20E7BC280D0B1700B076E7 /* SideMenuViewModel.swift in Sources */,
 				6A05FA06280533D100BB7957 /* AuthHeaderView.swift in Sources */,
 				6A7A327E281C81CA006DDA42 /* Landmark.swift in Sources */,
-				6A891EA42802975B00E74A5D /* HomeView.swift in Sources */,
 				6A41608C2816BA15009448F7 /* RecipeListViewModel.swift in Sources */,
-				6A891EA62802977200E74A5D /* CategoriesView.swift in Sources */,
 				6A41608E2816BAB7009448F7 /* RecipeDetailViewModel.swift in Sources */,
 				6A4160642812DB73009448F7 /* Constants.swift in Sources */,
 				6A20E7BA280D0AD000B076E7 /* SideMenuOptionRowView.swift in Sources */,
@@ -705,7 +685,7 @@
 				6A41607F2816AFB9009448F7 /* RecipeListView.swift in Sources */,
 				6A20E7C7280E4E4E00B076E7 /* LoginPageModel.swift in Sources */,
 				6A3362262805244A00CA5149 /* LoginView.swift in Sources */,
-				6A4160A02816FE93009448F7 /* TaskListViewModel.swift in Sources */,
+				6A4160A02816FE93009448F7 /* ItemListViewModel.swift in Sources */,
 				6A4160612812DAFB009448F7 /* RecipeCategoryViewModel.swift in Sources */,
 				6A20E7C0280D989E00B076E7 /* ItemModel.swift in Sources */,
 				6A4160A92817AB34009448F7 /* SettingView.swift in Sources */,
@@ -713,7 +693,6 @@
 				6A7A3280281C8208006DDA42 /* LandmarkAnnotation.swift in Sources */,
 				6A05FA01280526D500BB7957 /* RoundedShape.swift in Sources */,
 				6A7A3279281C7ECC006DDA42 /* LocationManager.swift in Sources */,
-				6A891EAC280297AE00E74A5D /* NavigateView.swift in Sources */,
 				6A41605D2812DA3A009448F7 /* WebServices.swift in Sources */,
 				6A891E66280020B600E74A5D /* ContentView.swift in Sources */,
 				6A4160A228170170009448F7 /* AddListView.swift in Sources */,
@@ -738,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A891E75280020BA00E74A5D /* HandyListAppTests.swift in Sources */,
+				6A70CE1D282051E500BBEFC4 /* PersistanceControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

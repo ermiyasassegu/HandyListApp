@@ -11,14 +11,7 @@ struct SideMenuHeaderView: View {
     //@Binding var isShowing: Bool
     
     var body: some View {
-//        ZStack(alignment: .topTrailing){
-//            Button(action: {isShowing.toggle()}, label: {
-//                Image(systemName: "xmark")
-//                    .frame(width: 32, height: 32)
-//                foregroundColor(.white)
-//                    .padding()
-//            })
-//        }
+
         VStack(alignment: .leading) {
             Circle()
                 .frame(width: 48, height: 48)

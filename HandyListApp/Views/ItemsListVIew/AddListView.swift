@@ -10,23 +10,23 @@ import SwiftUI
 
     struct AddListView: View {
         @Environment(\.managedObjectContext) var viewContext
-        @EnvironmentObject var taskListVM:TaskListViewModel
+        @EnvironmentObject var itemListVM:ItemListViewModel
         @Binding var addView:Bool
         
         var body: some View {
             NavigationView{
                 Form{
                     VStack{
-                        TextField("Enter Name", text: $taskListVM.taskListTitle)
+                        TextField("Enter Name", text: $itemListVM.itemListTitle)
                             .frame(height: 55)
                             .background(Color(.white))
                             .cornerRadius(10)
                             .accessibility(identifier: "addItemTextField")
                         Button(action: {
-                            taskListVM.createTask(context: viewContext)
+                            itemListVM.createItem(context: viewContext)
                             addView.toggle()
                         }, label: {
-                            if taskListVM.taskListItem == nil {
+                            if itemListVM.itemListItem == nil {
                                 Text("Add Item")
                                     .accessibility(identifier: "addItemButton")
                                     .foregroundColor(.white)
@@ -52,7 +52,7 @@ import SwiftUI
                             .buttonBorderShape(.roundedRectangle)
                     }
                 }
-                .navigationTitle(taskListVM.taskListItem == nil ? "Add an Item" : "Edit an Item")
+                .navigationTitle(itemListVM.itemListItem == nil ? "Add an Item" : "Edit an Item")
             }
         }
     }

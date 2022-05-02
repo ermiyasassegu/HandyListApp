@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemsListView: View {
         @Environment(\.managedObjectContext) private var viewContext
     
-        @EnvironmentObject var taskListVM:TaskListViewModel
+        @EnvironmentObject var itemListVM:ItemListViewModel
     
         @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) var fetchedTaskList:FetchedResults<TaskList>
         
@@ -27,12 +27,12 @@ struct ItemsListView: View {
                 List{
                     Section(LocalizedStringKey("Favorite")){
                         ForEach(fetchedTaskList.filter{$0.isFavorite == true}) {item in
-                            TaskListCell(taskListItem: item)
+                            ItemListCell(itemListItem: item)
                         }
                     }
                     Section(LocalizedStringKey("Items")) {
                         ForEach(fetchedTaskList.filter{$0.isFavorite == false}) {item in
-                            TaskListCell(taskListItem: item)
+                            ItemListCell(itemListItem: item)
                         } .accessibility(identifier: "itemList")
                     }
                     
@@ -61,8 +61,8 @@ struct ItemsListView: View {
                 }
                 .toolbar{
                     Button(action: {
-                        taskListVM.taskListTitle = ""
-                        taskListVM.taskListItem = nil
+                        itemListVM.itemListTitle = ""
+                        itemListVM.itemListItem = nil
                         addView.toggle()
                     }, label: {
                         Label("Add Item",systemImage: "plus")
@@ -114,7 +114,7 @@ private func addItem() {
                 return
             }
 
-           // taskListVM.createTask(context: viewContext)
+          
             DispatchQueue.main.async {
                 withAnimation {
 

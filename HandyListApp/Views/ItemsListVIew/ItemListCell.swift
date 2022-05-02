@@ -1,5 +1,5 @@
 //
-//  TaskListCell.swift
+//  ItemListCell.swift
 //  HandyListApp
 //
 //  Created by iosdev on 25.4.2022.
@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct TaskListCell: View {
+struct ItemListCell: View {
     @Environment(\.managedObjectContext) var viewContext
-    @EnvironmentObject var taskListVM:TaskListViewModel
-    @ObservedObject var taskListItem:TaskList
+    @EnvironmentObject var itemListVM:ItemListViewModel
+    @ObservedObject var itemListItem:TaskList
     
     @State private var isEdit = false
     
     var body: some View {
         HStack{
             HStack{
-                if taskListItem.isDone{
-                    Text(taskListItem.title ?? "").foregroundColor(.gray)
+                if itemListItem.isDone{
+                    Text(itemListItem.title ?? "").foregroundColor(.gray)
                 }else{
-                    Text(taskListItem.title ?? "")
+                    Text(itemListItem.title ?? "")
                 }
                 Spacer()
-                if (taskListItem.date != nil){
-                    Text(calcTimeSince(date: taskListItem.date!))
+                if (itemListItem.date != nil){
+                    Text(calcTimeSince(date: itemListItem.date!))
                                 .foregroundColor(.gray)
                                 .italic()
                   
@@ -33,9 +33,9 @@ struct TaskListCell: View {
             }
             Spacer()
             Button(action: {
-                taskListVM.isDone(task: taskListItem, context: viewContext)
+                itemListVM.isDone(item: itemListItem, context: viewContext)
             }, label: {
-                Image(systemName: !taskListItem.isDone ? "circle": "checkmark.circle")
+                Image(systemName: !itemListItem.isDone ? "circle": "checkmark.circle")
             })
                 .tint(.blue)
         }
@@ -44,21 +44,21 @@ struct TaskListCell: View {
         }
         .swipeActions(edge: .leading, allowsFullSwipe: true){
             Button(action: {
-                taskListVM.isFavorite(task: taskListItem, context: viewContext)
+                itemListVM.isFavorite(item: itemListItem, context: viewContext)
             }, label: {
-                Label("Favorite",systemImage: taskListItem.isFavorite ? "heart.slash" : "heart")
+                Label("Favorite",systemImage: itemListItem.isFavorite ? "heart.slash" : "heart")
             })
                 .tint(.green)
         }
         .swipeActions(edge: .trailing, allowsFullSwipe: false){
             Button(role: .destructive, action: {
-                taskListVM.delete(task: taskListItem, context: viewContext)
+                itemListVM.delete(item: itemListItem, context: viewContext)
             }, label: {
                 Label("Delete",systemImage: "trash")
             })
             Button(action: {
-                taskListVM.taskListTitle = taskListItem.title ?? ""
-                taskListVM.taskListItem = taskListItem
+                itemListVM.itemListTitle = itemListItem.title ?? ""
+                itemListVM.itemListItem = itemListItem
                 isEdit.toggle()
             }, label: {
                 Label("Edit",systemImage: "pencil")

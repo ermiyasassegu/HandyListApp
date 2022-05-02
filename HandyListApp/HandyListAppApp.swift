@@ -15,7 +15,7 @@ struct HandyListAppApp: App {
     
     let persistenceController = PersistenceController.shared
        
-    @StateObject var taskListViewModel = TaskListViewModel()
+    @StateObject var itemListViewModel = ItemListViewModel()
     
     init() {
         FirebaseApp.configure()
@@ -30,7 +30,7 @@ struct HandyListAppApp: App {
             
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
             .environmentObject(viewModel)
-            .environmentObject(taskListViewModel)
+            .environmentObject(itemListViewModel)
             
                             
         }
