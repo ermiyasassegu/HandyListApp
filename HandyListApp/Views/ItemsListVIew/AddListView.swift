@@ -49,7 +49,7 @@ import SwiftUI
                             .buttonBorderShape(.roundedRectangle)
                     }
                 }
-                .navigationTitle(taskListVM.taskListItem == nil ? "Add Item" : "Edit")
+                .navigationTitle(taskListVM.taskListItem == nil ? "Add an Item 🥗" : "Edit an Item 🍝")
             }
         }
     }
