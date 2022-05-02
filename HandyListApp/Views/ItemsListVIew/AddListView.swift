@@ -28,6 +28,7 @@ import SwiftUI
                         }, label: {
                             if taskListVM.taskListItem == nil {
                                 Text("Add Item")
+                                    .accessibility(identifier: "addItemButton")
                                     .foregroundColor(.white)
                                     .frame(height: 55)
                                     .frame(maxWidth: .infinity)
@@ -44,6 +45,7 @@ import SwiftUI
                                     .cornerRadius(10)
                                     .padding()
                             }
+                            
                         })
                             
                             .buttonStyle(.bordered)

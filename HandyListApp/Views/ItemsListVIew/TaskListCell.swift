@@ -27,7 +27,7 @@ struct TaskListCell: View {
                     Text(calcTimeSince(date: taskListItem.date!))
                                 .foregroundColor(.gray)
                                 .italic()
-                    //Text("\(taskListItem.date!.formatted(.dateTime.month().day().hour().minute().second()))").foregroundColor(.gray)
+                  
                 }
                 
             }

@@ -26,14 +26,14 @@ struct ItemsListView: View {
                 ZStack(alignment: .bottomTrailing) {
                 List{
                     Section(LocalizedStringKey("Favorite")){
-                        ForEach(fetchedTaskList.filter{$0.isFavorite == true}){item in
+                        ForEach(fetchedTaskList.filter{$0.isFavorite == true}) {item in
                             TaskListCell(taskListItem: item)
                         }
                     }
-                    Section(LocalizedStringKey("Items")){
-                        ForEach(fetchedTaskList.filter{$0.isFavorite == false}){item in
+                    Section(LocalizedStringKey("Items")) {
+                        ForEach(fetchedTaskList.filter{$0.isFavorite == false}) {item in
                             TaskListCell(taskListItem: item)
-                        }
+                        } .accessibility(identifier: "itemList")
                     }
                     
                 }
