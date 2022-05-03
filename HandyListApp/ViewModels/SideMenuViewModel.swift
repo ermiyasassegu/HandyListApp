@@ -11,7 +11,6 @@ import SwiftUI
 
 enum SideMenuViewModel: Int, CaseIterable {
     case profile
-    case lists
     case nearByShop
     case Settings
     case logout
@@ -19,11 +18,9 @@ enum SideMenuViewModel: Int, CaseIterable {
    // static let Profile : LocalizedStringKey = ""
     var title: String{
         switch self {
-            
+            // in this case the use of NsLocalizedString return a localized version of a string 
         case .profile:
             return NSLocalizedString("Profile", comment:"Profile")
-        case .lists:
-            return "Lists"
         case .nearByShop:
             return NSLocalizedString("NearByShop", comment:"NearByShop")
         case .Settings:
@@ -38,8 +35,6 @@ enum SideMenuViewModel: Int, CaseIterable {
             
         case .profile:
             return "person"
-        case .lists:
-            return "list.bullet"
         case .nearByShop:
             return "location"
         case .Settings:

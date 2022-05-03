@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SettingView: View {
+    
     @State private var darkMode:Bool = false
     @State private var currentMode:ColorScheme = .light
+    
     var body: some View {
         NavigationView {
             Form {

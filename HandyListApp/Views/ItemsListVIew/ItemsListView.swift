@@ -83,11 +83,11 @@ private func recordButton() -> some View {
             .cornerRadius(10)
     }.foregroundColor(.red)
 }
-
+// sound level scaled the bar height while speaking
 private func normalizeSoundLevel(level: Float) -> CGFloat {
-    let level = max(0.2, CGFloat(level) + 50) / 2 // between 0.1 and 25
+    let level = max(0.2, CGFloat(level) + 50) / 2 // sound level between 0.1 and 25
     
-    return CGFloat(level * (100 / 25)) // scaled to max at 300 (our height of our bar)
+    return CGFloat(level * (100 / 25))
 }
 
 private func visualizerView() -> some View {
@@ -99,7 +99,7 @@ private func visualizerView() -> some View {
         }
     }
 }
-
+// The item add to the itemlist while the stop monitoring record stops otherwise start recording
 private func addItem() {
     if speechManager.isRecording {
         self.recording = false

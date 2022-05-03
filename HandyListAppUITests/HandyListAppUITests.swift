@@ -35,7 +35,7 @@ class when_add_new_item_screen_is_presented: setup_launching_add_new_item_screen
         XCTAssertTrue(app.textFields["addItemTextField"].exists)
         XCTAssertTrue(app.buttons["showAddItemButton"].exists)
     }
-    
+   // to check the dismiss model after adding new item
     func test_should_dismiss_modal_after_adding_new_item() {
         
         let itemTextField = app.textFields["addItemTextField"]
@@ -49,14 +49,14 @@ class when_add_new_item_screen_is_presented: setup_launching_add_new_item_screen
     }
 }
 
-// adding new item to the list test
+// adding new item to the list and display in the itemList test
 class when_adding_new_item: setup_launching_add_new_item_screen {
     
     func test_should_display_new_item_in_the_list() {
         
         let itemTextField = app.textFields["addItemTextField"]
         itemTextField.tap()
-        itemTextField.typeText("Milk shake")
+        itemTextField.typeText("Baby Wiper")
         let addItemButton = app.buttons["addItemButton"]
         addItemButton.tap()
         XCTAssertTrue(addItemButton.waitForExistence(timeout: 0.5))
