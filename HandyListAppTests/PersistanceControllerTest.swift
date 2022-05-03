@@ -9,21 +9,29 @@ import XCTest
 import CoreData
 @testable import HandyListApp
 
-struct PersistenceController{
-    static let shared = PersistenceController()
+struct PersistenceControllerTest {
     
-    let container:NSPersistentContainer
-    init(inMemory: Bool = false){
-        container = NSPersistentContainer(name: "CD_CRUD_MVVM")
-        if inMemory{
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+    let persistentContainer: NSPersistentContainer
+        let backgroundContext: NSManagedObjectContext
+        let mainContext: NSManagedObjectContext
+        
+        init() {
+            persistentContainer = NSPersistentContainer(name: "CD_CRUD_MVVM")
+            let description = persistentContainer.persistentStoreDescriptions.first
+            description?.type = NSInMemoryStoreType
+            
+            persistentContainer.loadPersistentStores { description, error in
+                guard error == nil else {
+                    fatalError("was unable to load store \(error!)")
+                }
+            }
+            
+            mainContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+            mainContext.automaticallyMergesChangesFromParent = true
+            mainContext.persistentStoreCoordinator = persistentContainer.persistentStoreCoordinator
+
+            backgroundContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+            backgroundContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+            backgroundContext.parent = self.mainContext
         }
-        container.viewContext.automaticallyMergesChangesFromParent = true
-        container.loadPersistentStores(completionHandler: {(storeDescription, error) in
-                                       if let error = error as NSError? {
-            fatalError("Unresolved error \(error), \(error.userInfo)")
-        }
-                                       }
-        )
-    }
 }

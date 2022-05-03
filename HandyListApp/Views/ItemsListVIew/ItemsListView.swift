@@ -12,7 +12,7 @@ struct ItemsListView: View {
     
         @EnvironmentObject var itemListVM:ItemListViewModel
     
-        @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) var fetchedTaskList:FetchedResults<TaskList>
+        @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) var fetchedItemList:FetchedResults<TaskList>
         
         @State private var addView = false
     
@@ -26,12 +26,12 @@ struct ItemsListView: View {
                 ZStack(alignment: .bottomTrailing) {
                 List{
                     Section(LocalizedStringKey("Favorite")){
-                        ForEach(fetchedTaskList.filter{$0.isFavorite == true}) {item in
+                        ForEach(fetchedItemList.filter{$0.isFavorite == true}) {item in
                             ItemListCell(itemListItem: item)
                         }
                     }
                     Section(LocalizedStringKey("Items")) {
-                        ForEach(fetchedTaskList.filter{$0.isFavorite == false}) {item in
+                        ForEach(fetchedItemList.filter{$0.isFavorite == false}) {item in
                             ItemListCell(itemListItem: item)
                         } .accessibility(identifier: "itemList")
                     }
