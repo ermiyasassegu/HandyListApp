@@ -16,6 +16,7 @@ struct PlaceListView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
+                // the top part to be emply
                 EmptyView()
             }.frame(width: UIScreen.main.bounds.size.width, height: 60)
                 .background(Color.gray)
@@ -24,7 +25,7 @@ struct PlaceListView: View {
             )
             
             List {
-                
+                // list the lanmmark
                 ForEach(self.landmarks, id: \.id) { landmark in
                     
                     VStack(alignment: .leading) {

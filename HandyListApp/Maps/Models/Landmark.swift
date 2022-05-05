@@ -10,6 +10,7 @@ import MapKit
 
 struct Landmark {
     
+    // landmark variables create with Mk place mark
     let placemark: MKPlacemark
     
     var id: UUID {

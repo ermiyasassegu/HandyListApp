@@ -56,7 +56,7 @@ struct MapView : UIViewRepresentable {
              // update the landmark annotation
         updateAnnotations(from: uiView)
     }
-    // update the landmark annotation according to the given location name
+    // update the landmark annotation according to the the new add location name and remove the previous annotation
     private func updateAnnotations(from mapView: MKMapView) {
            mapView.removeAnnotations(mapView.annotations)
            let annotations = self.landmarks.map(LandmarkAnnotation.init)

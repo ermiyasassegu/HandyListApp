@@ -15,15 +15,16 @@ struct MapScreenView: View {
     @State private var tapped: Bool = false
     
     private func getNearByLandmarks() {
-        
+        // location request from search location
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = search
         
         let search = MKLocalSearch(request: request)
         search.start { (response, error) in
             if let response = response {
-                
+                // array of mapkit  location items
                 let mapItems = response.mapItems
+                // here using placemark we can create the array of landmark
                 self.landmarks = mapItems.map {
                     Landmark(placemark: $0.placemark)
                 }
@@ -33,7 +34,7 @@ struct MapScreenView: View {
         }
         
     }
-    
+    // the offset for the searchbar UI screen
     func calculateOffset() -> CGFloat {
         
         if self.landmarks.count > 0 && !self.tapped {
