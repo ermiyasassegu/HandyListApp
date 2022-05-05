@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemListCell: View {
+    
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var itemListVM:ItemListViewModel
     @ObservedObject var itemListItem:TaskList
@@ -32,6 +33,7 @@ struct ItemListCell: View {
                 
             }
             Spacer()
+            // the button to mark after the purchase completed
             Button(action: {
                 itemListVM.isDone(item: itemListItem, context: viewContext)
             }, label: {
@@ -39,9 +41,12 @@ struct ItemListCell: View {
             })
                 .tint(.blue)
         }
+        // pop up the sheet to edit
         .sheet(isPresented: $isEdit){
             AddListView(addView: $isEdit)
         }
+        
+        // to swipe the item from the list to add to the favorite
         .swipeActions(edge: .leading, allowsFullSwipe: true){
             Button(action: {
                 itemListVM.isFavorite(item: itemListItem, context: viewContext)
@@ -50,12 +55,15 @@ struct ItemListCell: View {
             })
                 .tint(.green)
         }
+        
+        // swipe the item to delete, edit in a new pop up sheet
         .swipeActions(edge: .trailing, allowsFullSwipe: false){
             Button(role: .destructive, action: {
                 itemListVM.delete(item: itemListItem, context: viewContext)
             }, label: {
                 Label("Delete",systemImage: "trash")
             })
+            
             Button(action: {
                 itemListVM.itemListTitle = itemListItem.title ?? ""
                 itemListVM.itemListItem = itemListItem

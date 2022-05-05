@@ -26,7 +26,7 @@ struct SideMenuView: View {
                 
             }
             .padding(.leading)
-            
+            // display each side menu view from view model and navigate to clickable button
             ForEach(SideMenuViewModel.allCases, id: \.rawValue) { viewModel in
                 if viewModel == .profile {
                     NavigationLink {

@@ -55,10 +55,10 @@ class SpeechManager {
             print("Speech recognizer not available.")
             return
         }
-        
+        // initialize recognition request
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         recognitionRequest!.shouldReportPartialResults = true
-        
+        // call the recognizer and error handler
         recognizer.recognitionTask(with: recognitionRequest!) { (result, error) in
             guard error == nil else {
                 print("got error \(error!.localizedDescription)")
@@ -70,7 +70,7 @@ class SpeechManager {
                 completion(result.bestTranscription.formattedString)
             }
         }
-        
+        // initialize and set audio engine
         audioEngine = AVAudioEngine()
         inputNote = audioEngine.inputNode
         let recordingFormat = inputNote.outputFormat(forBus: 0)
@@ -79,9 +79,11 @@ class SpeechManager {
         }
         
         audioEngine.prepare()
-        
+        // start the session
         do {
             audioSession = AVAudioSession.sharedInstance()
+            
+            // set record mode and option for backgroud noises and notification while failing
             try audioSession.setCategory(.record, mode: .spokenAudio, options: .duckOthers)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
             

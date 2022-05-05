@@ -13,7 +13,7 @@ struct RecipeCellView: View {
     
     var body: some View {
         HStack {
-            
+            // fetch the image from Url
             AsyncImage(url: recipe.imageURL) { image in
                 image.resizable()
                     .frame(width: 100, height: 100)

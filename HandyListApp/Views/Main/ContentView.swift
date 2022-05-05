@@ -57,6 +57,7 @@ extension ContentView {
                 }
                 .ignoresSafeArea()
             }
+            
             SideMenuView()
                 .frame(width: 300)
                 .offset(x: showMenu ? 0: -300, y: 0)

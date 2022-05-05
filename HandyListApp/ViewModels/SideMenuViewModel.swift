@@ -15,7 +15,7 @@ enum SideMenuViewModel: Int, CaseIterable {
     case Settings
     case logout
     
-   // static let Profile : LocalizedStringKey = ""
+   // the title for enum
     var title: String{
         switch self {
             // in this case the use of NsLocalizedString return a localized version of a string 
@@ -29,7 +29,7 @@ enum SideMenuViewModel: Int, CaseIterable {
             return NSLocalizedString("Logout", comment:"Logout")
         }
     }
-    
+    // the image from FS symbol for each title
     var imageName: String {
         switch self {
             

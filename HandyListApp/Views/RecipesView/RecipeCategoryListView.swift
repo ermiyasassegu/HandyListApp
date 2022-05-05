@@ -13,7 +13,7 @@ struct RecipeCategoryListView: View {
     
     var body: some View {
         List(categories) { category in
-            
+            // navigate to the selected catagory
             NavigationLink(destination: RecipeListScreen(recipeCategory: category).navigationTitle(category.title)) {
                 RecipeCategoryCellView(recipeCategory: category)
             }

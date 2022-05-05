@@ -10,18 +10,18 @@ import AVFoundation
 
 class MicrophoneMonitor: ObservableObject {
     
-    // 1
+    // 1 variables
     private var audioRecorder: AVAudioRecorder
     private var timer: Timer?
     
     private var currentSample: Int
     private let numberOfSamples: Int
     
-    // 2
+    // 2 publish property
     @Published public var soundSamples: [Float]
     
     init(numberOfSamples: Int) {
-        self.numberOfSamples = numberOfSamples // In production check this is > 0.
+        self.numberOfSamples = numberOfSamples > 0 ? numberOfSamples : 10
         self.soundSamples = [Float](repeating: .zero, count: numberOfSamples)
         self.currentSample = 0
         
@@ -30,7 +30,7 @@ class MicrophoneMonitor: ObservableObject {
         if audioSession.recordPermission != .granted {
             audioSession.requestRecordPermission { (isGranted) in
                 if !isGranted {
-                    fatalError("You must allow audio recording for this demo to work")
+                    fatalError("we need audio recoring visualization")
                 }
             }
         }

@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ItemsListView: View {
-        @Environment(\.managedObjectContext) private var viewContext
     
+        @Environment(\.managedObjectContext) private var viewContext
         @EnvironmentObject var itemListVM:ItemListViewModel
     
+        // fetch from the persistance store
         @FetchRequest(entity: TaskList.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) var fetchedItemList:FetchedResults<TaskList>
-        
         @State private var addView = false
     
     // paramenters for add to the list by Speech
     @State private var recording = false
     @ObservedObject private var mic = MicrophoneMonitor(numberOfSamples: 30)
+    
+    
     private var speechManager = SpeechManager()
         
         var body: some View {

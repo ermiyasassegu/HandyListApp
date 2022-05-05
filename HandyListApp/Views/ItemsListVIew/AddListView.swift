@@ -17,11 +17,15 @@ import SwiftUI
             NavigationView{
                 Form{
                     VStack{
+                        // Name the entered item
                         TextField("Enter Name", text: $itemListVM.itemListTitle)
                             .frame(height: 55)
                             .background(Color(.white))
                             .cornerRadius(10)
+                        // this identifier is to access the textfield in the UI test
                             .accessibility(identifier: "addItemTextField")
+                        
+                        // button whether to add or edit
                         Button(action: {
                             itemListVM.createItem(context: viewContext)
                             addView.toggle()
