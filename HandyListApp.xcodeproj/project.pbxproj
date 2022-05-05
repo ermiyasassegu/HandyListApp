@@ -123,6 +123,7 @@
 		6A4160A628171467009448F7 /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
 		6A4160A82817AB34009448F7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		6A70CE1C282051E500BBEFC4 /* PersistanceControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceControllerTest.swift; sourceTree = "<group>"; };
+		6A70CE1E2823A98900BBEFC4 /* Handy waypoints.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Handy waypoints.gpx"; sourceTree = "<group>"; };
 		6A7A3276281C7E6B006DDA42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6A7A3278281C7ECC006DDA42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		6A7A327D281C81CA006DDA42 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
@@ -384,6 +385,7 @@
 				6A7A328B281C9B02006DDA42 /* Info.plist */,
 				6A7A328A281C9AE7006DDA42 /* HandyListApp.entitlements */,
 				6A891E63280020B600E74A5D /* HandyListAppApp.swift */,
+				6A70CE1E2823A98900BBEFC4 /* Handy waypoints.gpx */,
 				6A4160842816B8F1009448F7 /* RecipeScreens */,
 				6A4160622812DB59009448F7 /* Utils */,
 				6A7A44062818E54A0023DE3A /* Helpers */,
