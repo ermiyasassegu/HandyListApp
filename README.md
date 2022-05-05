@@ -13,9 +13,8 @@ it uses an MVVM-style architecture along with SwiftUI, so you must have iOS 15.0
 
 ![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 40 31](https://user-images.githubusercontent.com/67770426/166864669-3a3b6962-74b4-490f-8977-d3864a347832.png)
 
-![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 39 41](https://user-images.githubusercontent.com/67770426/166864676-a875de4f-22ab-4c5e-b335-90b587b7f0a4.png)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2022-05-05 at 11 16 35](https://user-images.githubusercontent.com/67770426/166886138-94ce8488-d33a-416b-90d6-bb11762dfb1b.png)
 
-![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 39 54](https://user-images.githubusercontent.com/67770426/166864724-4acbffe7-d36e-4e5b-b2d4-243e65d4b78e.png)
 
 The main screen with the tab home view that show:
 
