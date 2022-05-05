@@ -27,4 +27,11 @@ plus icon that pop-up a new sheet to add item
 The CoreData model has only a single name "CD_CRUD_MVVM"
 
 CD_CRUD_MVVM have an id (UUID), a title, date, isFavorite & isDone. "isDone" a boolean that provides a circle strike through the appearance for the times whether the item is purchase for today's shopping , or not, and also an "isFavorite" boolean that provides the user can save the purchased item for the future reference.
+
 The app has features of possibility each of the items add(create), read, edit and delete from the core data.
+
+In the tab view, there are recipe which shows how to fetch data from the API source to individual categories and populated list views, navigate to detailed results. 
+
+In the Side Menu. Profile of user, location for nearByShop, setting for darkmode and log out are listed.
+
+In the location nearByShop, the user location identify by adding custom static location using GPX file latitude and longtude for specific location.
