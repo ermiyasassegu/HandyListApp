@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+// view model for detail screen
 @MainActor
 class RecipeDetailViewModel: ObservableObject {
     

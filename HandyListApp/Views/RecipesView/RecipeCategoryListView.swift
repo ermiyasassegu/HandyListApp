@@ -12,6 +12,7 @@ struct RecipeCategoryListView: View {
     let categories: [RecipeCategoryViewModel]
     
     var body: some View {
+        // list individual category from categories
         List(categories) { category in
             // navigate to the selected catagory
             NavigationLink(destination: RecipeListScreen(recipeCategory: category).navigationTitle(category.title)) {

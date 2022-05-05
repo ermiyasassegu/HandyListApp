@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+// display the recipe to the particular category
 struct RecipeListScreen: View {
     
     let recipeCategory: RecipeCategoryViewModel
     @StateObject private var recipeListVM = RecipeListViewModel()
     
     var body: some View {
+        // list for a particular category and async action while loading
         RecipeListView(recipes: recipeListVM.recipes)
             .task {
                 await recipeListVM.populateRecipesByCategory(name: recipeCategory.title)

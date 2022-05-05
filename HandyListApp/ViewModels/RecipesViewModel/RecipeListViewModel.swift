@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+// view model of recipe
 @MainActor
 class RecipeListViewModel: ObservableObject {
     

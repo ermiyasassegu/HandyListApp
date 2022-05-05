@@ -10,8 +10,8 @@ import Firebase
 
 @main
 struct HandyListAppApp: App {
-    //initialize view model to eject to the enviroment
     
+    //initialize view models in the parent that eject to the enviroment and so possible to access by other views
     @StateObject var viewModel = AuthViewModel()
     
     let persistenceController = PersistenceController.shared

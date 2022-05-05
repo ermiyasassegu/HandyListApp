@@ -13,10 +13,12 @@ struct RecipeCategoryListScreen: View {
     
     var body: some View {
         NavigationView {
+            // list the categories from an API and async action while loading
             RecipeCategoryListView(categories: model.recipeCategories)
                 .task {
                     await model.populateCategories()
                 }
+            // title of the recipe category and localizedString Key for localization
             .navigationTitle(LocalizedStringKey("Recipes"))
         }
     }

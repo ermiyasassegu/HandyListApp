@@ -7,20 +7,21 @@
 
 import SwiftUI
 
+// Display the individual category
+
 struct RecipeCategoryCellView: View {
     
     let recipeCategory: RecipeCategoryViewModel
     
     var body: some View {
         HStack(spacing: 20) {
-            
+            // image fetch from imageUrl
             AsyncImage(url: recipeCategory.imageUrl) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 100, maxHeight: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             } placeholder: {
-                //ProgressView()
                 Image("recipes")
                     .resizable()
                     .aspectRatio(contentMode: .fill)

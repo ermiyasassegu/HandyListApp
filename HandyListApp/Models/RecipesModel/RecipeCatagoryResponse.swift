@@ -9,6 +9,7 @@ import Foundation
 
 
 struct RecipeCategoryResponse: Decodable {
+    // model for the catagories
     let categories: [RecipeCategory]
 }
 

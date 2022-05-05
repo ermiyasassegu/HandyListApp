@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// display the detal recipe
 struct RecipeDetailScreen: View {
     
     let recipeId: String
@@ -21,7 +22,6 @@ struct RecipeDetailScreen: View {
                          .frame(width: bounds.width - 20)
                          .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
                  } placeholder: {
-                     //ProgressView()
                      Image("recipes")
                          .resizable()
                          .aspectRatio(contentMode: .fill)
@@ -30,7 +30,7 @@ struct RecipeDetailScreen: View {
                          .frame(maxWidth: .infinity, maxHeight: 300)
                  }
                  .padding(.bottom, 20)
-                 
+                 // detail ingridient for each recipe
                  ForEach(recipeDetailVM.ingredients, id: \.self) { ingredient in
                      Text(ingredient)
                  }
@@ -38,6 +38,7 @@ struct RecipeDetailScreen: View {
                  Spacer()
              }
         .padding()
+        // async that load the detail recipe
         .task {
             await recipeDetailVM.populateRecipeDetail(recipeId: recipeId)
         }

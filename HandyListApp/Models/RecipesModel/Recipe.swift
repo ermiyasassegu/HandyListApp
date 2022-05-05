@@ -8,6 +8,7 @@
 import Foundation
 
 struct RecipeResponse: Decodable {
+    // recipe model for each item
     let recipes: [Recipe]
 }
 
