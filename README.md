@@ -9,6 +9,7 @@ it uses an MVVM-style architecture along with SwiftUI, so you must have iOS 15.0
 ![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 41 02](https://user-images.githubusercontent.com/67770426/166866044-e8276d64-d9fe-4a70-bc39-d63cce5dd7fb.png)
 
 ![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 40 44](https://user-images.githubusercontent.com/67770426/166866074-8d647318-b70f-4f36-8fbe-f689f8b5c693.png)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2022-05-05 at 21 33 30](https://user-images.githubusercontent.com/67770426/166995743-e395fffc-2b75-4260-af14-097c403e024e.png)
 
 
 ![Simulator Screen Shot - iPhone 12 Pro - 2022-05-05 at 07 40 31](https://user-images.githubusercontent.com/67770426/166864669-3a3b6962-74b4-490f-8977-d3864a347832.png)
@@ -37,3 +38,6 @@ In the tab view, there are recipe which shows how to fetch data from the API sou
 In the Side Menu. Profile of user, location for nearByShop, setting for darkmode and log out are listed.
 
 In the location nearByShop, the user location identify by adding custom static location using GPX file latitude and longtude for specific location.
+
+** Dependencies**
+This project uses Firebase-ios-SDK as depencecy package manager.
