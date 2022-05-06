@@ -1,4 +1,4 @@
-# HandyListApp
+# HandyListApp 🛍️
 
 This is a simple, iOS project to process a shopping list that you can take to the shopping store with you, 
 and move items into favorite or off the list as you pick them up. It persists data in CoreData as well as 
@@ -46,7 +46,7 @@ This project uses Firebase-ios-SDK as depencecy package manager.
 
 For simplicity here are our test cases that have to cover as per the business logic we have:
 
-Testing Should make sure new screen Title display and all required controls are present
-Testing should dismisal the modal after adding the new item.
-Navigating to list view and add the new item
+-Testing Should make sure new screen Title display and all required controls are present.
+-Testing should dismisal the modal after adding the new item.
+-Navigating to list view and add the new item.
 
