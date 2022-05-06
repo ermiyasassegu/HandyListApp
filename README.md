@@ -41,3 +41,12 @@ In the location nearByShop, the user location identify by adding custom static l
 
 ** Dependencies**
 This project uses Firebase-ios-SDK as depencecy package manager.
+
+**UI Testing**
+
+For simplicity here are our test cases that have to cover as per the business logic we have:
+
+Testing Should make sure new screen Title display and all required controls are present
+Testing should dismisal the modal after adding the new item.
+Navigating to list view and add the new item
+
