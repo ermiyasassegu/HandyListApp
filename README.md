@@ -1,4 +1,4 @@
-# HandyListApp
+# HandyListApp  🛍 
 
 This is a simple, iOS project to process a shopping list that you can take to the shopping store with you, 
 and move items into favorite or off the list as you pick them up. It persists data in CoreData as well as 
